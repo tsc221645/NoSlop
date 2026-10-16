@@ -1,0 +1,7 @@
+{
+    "manifrest_version": 3,
+    "name": "NoSlop",
+    "version":"0.1.0",
+    "description": "an extension to remove AI Slop from your browsing experience."
+
+}
