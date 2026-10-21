@@ -1,7 +1,29 @@
 {
-    "manifrest_version": 3,
+    "manifest_version": 3,
     "name": "NoSlop",
     "version":"0.1.0",
-    "description": "an extension to remove AI Slop from your browsing experience."
+    "description": "an extension to remove AI Slop from your browsing experience.",
+
+    "permissions":[
+        "storage"
+    ],
+
+    "host_permissions":[
+        "https://www.reddit.com/*s"
+    ],
+
+    "content_scripts":[
+        {
+            "matches":[
+                "https://www.reddit.com/*"
+            ],
+            "js":[
+                "src/content/main.js"
+            ]s
+        }
+    ],
+    "action":{
+        "default_popup":"src/popup/popup.html"
+    }
 
 }
